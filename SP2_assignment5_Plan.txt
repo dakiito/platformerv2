@@ -1,0 +1,67 @@
+
+
+
+A platformer game where you can 
+
+1.press a button to restart
+
+all code should be able to be runnable again at the press of a button
+
+
+2. have a timer and record time at the end
+
+have a variable that stores current seconds and is displayed in top left
+when the player wins the game displays the seconds in the center of the screen
+
+3. have checkpoints
+
+when player touches an orb it saves the last checkpoint as an integer, when the player hits an obstacle, a isHit is
+changed to true, 3 if statements are run, in descending order, when the last checkpoint gets found, the position gets reset to that point   
+
+4. 3 lives
+
+a variable that goes down to 0 and starts at 3, everytime player hits an obstacle, the player loses a life
+
+5.jumping
+
+y=y-gravity+jumpvalue
+
+when space is pressed jump value becomes double the gravity, after 1.25 seconds it reverses back to 0
+6. obstacles
+
+im going to use CORNERS as the rectangle mode for this to be easier
+
+
+7. need to win 3 times, increasing difficulty each time
+
+
+this will depend on whether im done with time to spare or not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stage formula
+
+if(xpos>=x1&&ypos>=y1&&xpos<=x2&&ypos>=y2+10){
+gravity=0;
+canJump2=true;
+}else{
+gravity=2;
+}
+
+
+
